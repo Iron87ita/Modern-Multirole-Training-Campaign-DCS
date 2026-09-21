@@ -1,155 +1,108 @@
-# Modern Multirole Training Campaign
+# Modern Multirole Training Campaign – Caucasus
 
-A dynamic **modern air combat training campaign for DCS World**, designed for single-player and multiplayer training.
+**Version 2.0.0 · DCS World · Caucasus · Single-player / Multiplayer**
 
-The mission combines dynamic **BVR engagements**, dedicated **BFM guns-only training**, campaign-based enemy configurations and a Free Training environment.
+A dynamic modern-combat training environment by **IRON87ITA**. The mission combines a structured nine-stage multirole campaign with independent BVR, guns-only BFM and free-training systems controlled through the F10 radio menu.
 
-## Main Features
+## Highlights
 
-* Dynamic BVR training system
-* Dedicated **BFM ZONE** with guns-only AI opponents
-* **Post-merge weapons release** for BFM engagements
-* Multiplayer support
-* Dynamic Slots at Kobuleti
-* Dedicated airborne **BVR ZONE**
-* 16 BVR airborne client slots at approximately **20,000 ft**
-* Dynamic enemy spawning relative to the requesting player
-* Type-selected Single and Pair enemy spawning
-* Randomized engagements with 1, 2 or 4 aircraft
-* Nine modern enemy aircraft types
-* **Excellent / ACE** AI opponents
-* Campaign scenarios and Free Training modes
-* F10 radio menu control
-* Integrated briefing and **20 kneeboard pages**
+- Nine-stage modern multirole training campaign
+- Dynamic F10 radio menu
+- Single-player and multiplayer support
+- BLUE Dynamic Spawn at Kobuleti
+- Dedicated airborne BVR and BFM training areas
+- Dynamic enemy spawning relative to the requesting player
+- Type-selected and random ACE opponents
+- Guns-only BFM with neutral-merge protection
+- Air-to-ground and combined-force training
+- Integrated mission briefing and 20-page English kneeboard
+- No third-party mods required
 
-## Player Aircraft — BVR ZONE
+## Player entry
 
-The dedicated BVR airborne training area contains 16 client slots:
+Kobuleti provides BLUE Dynamic Spawn and normal mission operations.
 
-* 4× F-16C
-* 4× F/A-18C
-* 4× JF-17
-* 4× J-11A
+The dedicated BVR area contains 16 airborne client slots at approximately 20,000 ft:
 
-All aircraft start airborne at approximately **20,000 ft**.
+- 4 × F-16C
+- 4 × F/A-18C
+- 4 × JF-17
+- 4 × J-11A
 
-These slots are independent from the **Dynamic Slots at Kobuleti**.
+## Dynamic BVR training
 
-## Dynamic BVR Spawn System
+Bandits spawn ahead of the requesting player, aligned with that player's current ground track, and route back toward the requester.
 
-Enemy aircraft spawn **ahead of the requesting player**, following that player's current ground track, and are routed toward the requester.
+Available Free Training opponents:
 
-Spawn distance, altitude and opposition depend on the selected exercise.
+- MiG-29S
+- Su-27
+- Su-30
+- MiG-31
+- F-15C
+- F-16C
+- F/A-18C
+- JF-17
+- J-11A
 
-**Multiplayer range control is shared:** requests position opponents relative to the requesting player, but do not create separate exercises for each player. Coordinate before replacing or resetting an engagement.
+Each type can be generated as a single aircraft or pair. Random formations of one, two or four aircraft are also available. All scripted opponents use DCS **Excellent / ACE** skill.
 
-## BFM ZONE — Guns-Only Training
+## BFM Guns-Only training
 
-The dedicated **BFM ZONE** provides close-range combat training against AI opponents armed exclusively with their internal cannon.
+While airborne inside BFM ZONE, open:
 
-### Access
+```text
+F10 → OTHER → MODERN MULTIROLE TRAINING → FREE TRAINING – BFM GUNS
+```
 
-While airborne inside **BFM ZONE**, open:
+BFM opponents:
 
-**F10 → OTHER → MODERN MULTIROLE TRAINING → FREE TRAINING - BFM GUNS**
+- Spawn approximately 5 NM ahead
+- Spawn at the requesting player's altitude
+- Carry full cannon ammunition and no missiles
+- Remain WEAPONS HOLD through the neutral merge
+- Become GUNS HOT only after a confirmed close pass and separation
+- Track only the requesting player for merge validation
 
-Select a specific aircraft as a **Single or Pair**, or choose **Random Modern ×1, ×2 or ×4**.
+Random one-, two- and four-ship BFM formations are available.
 
-### Spawn Behaviour
+## Campaign air opposition
 
-* Bandits spawn approximately **5 NM ahead** along your current ground track.
-* Opponents start at **your current altitude**, heading toward you.
-* All aircraft use **Excellent / ACE** skill.
-* Loadouts contain **full cannon ammunition and empty pylons**, with no missiles.
-* The entire formation must fit inside BFM ZONE. If a request is rejected near the boundary, turn toward the centre and try again.
+| Stage | Opposition |
+|---|---|
+| 01 | MiG-29S |
+| 02 | MiG-29S + Su-27 |
+| 03 | Su-27 + Su-30 |
+| 04 | MiG-31 + Su-27 |
+| 08 | Su-27 + Su-30 |
+| 09 | MiG-29S + Su-27 + Su-30 + MiG-31 |
 
-### Neutral Merge & Weapons Release
+Later stages combine fighter opposition with ground objectives and air-defence threats.
 
-AI opponents remain **WEAPONS HOLD during the approach and through the first neutral pass**.
+## Multiplayer range control
 
-Each bandit becomes weapons free only after:
+Every BLUE player group receives its own F10 menu, but the generated training range is shared. Starting or resetting an exercise may replace another crew's scenario, so coordinate range-control actions in multiplayer.
 
-1. Passing within **1.20 NM** of the requesting player.
-2. Crossing more than **150 metres behind the player**, measured along the initial flight axis.
-3. Establishing increasing separation.
+## Installation
 
-The requesting group receives:
+1. Download the `.miz` file from the [latest GitHub release](https://github.com/Iron87ita/Modern-Multirole-Training-Campaign-DCS/releases/latest).
+2. Copy it to:
 
-**MERGE COMPLETE - GUNS HOT**
+   ```text
+   Saved Games\DCS\Missions
+   ```
 
-The bandit is then tasked to engage the requesting player's group with its cannon.
+3. Open DCS and select **Mission → My Missions**.
 
-Other players cannot unlock the merge condition, and there is **no automatic timer-based weapons release**. Unmerged bandits are removed if the requesting player leaves or their aircraft is lost.
+The same mission file can be loaded on a DCS dedicated server.
 
-**Training rule:** do not fire before the merge.
+## Community
 
-## Campaign Opponents
+- YouTube: [@Iron87Ita](https://www.youtube.com/@Iron87Ita)
+- Discord: `iron87`
 
-| Campaign    | Enemy Aircraft                   |
-| ----------- | -------------------------------- |
-| Campaign 01 | MiG-29S                          |
-| Campaign 02 | MiG-29S + Su-27                  |
-| Campaign 03 | Su-27 + Su-30                    |
-| Campaign 04 | MiG-31 + Su-27                   |
-| Campaign 08 | Su-27 + Su-30                    |
-| Campaign 09 | MiG-29S + Su-27 + Su-30 + MiG-31 |
+Feedback, mission reports and constructive suggestions are welcome through [GitHub Issues](https://github.com/Iron87ita/Modern-Multirole-Training-Campaign-DCS/issues).
 
-Campaign 01 is a visual engagement with its own loadout and merge rules. The dedicated **BFM GUNS** menu provides the separate guns-only training mode.
+## Disclaimer
 
-## Free Training Opponents
-
-The same nine aircraft types are available in both BVR and BFM Free Training:
-
-| Aircraft | Type-Selected Formation | BFM Armament |
-| -------- | ----------------------- | ------------ |
-| MiG-29S  | Single / Pair           | Cannon only  |
-| Su-27    | Single / Pair           | Cannon only  |
-| Su-30    | Single / Pair           | Cannon only  |
-| MiG-31   | Single / Pair           | Cannon only  |
-| F-15C    | Single / Pair           | Cannon only  |
-| F-16C    | Single / Pair           | Cannon only  |
-| F/A-18C  | Single / Pair           | Cannon only  |
-| JF-17    | Single / Pair           | Cannon only  |
-| J-11A    | Single / Pair           | Cannon only  |
-
-**Random Modern** generates **1, 2 or 4 opponents** selected from the full aircraft pool.
-
-BVR Free Training uses aircraft-specific missile loadouts. BFM Free Training uses guns-only loadouts.
-
-## Multiplayer & Range Management
-
-All players share the scripted training range.
-
-* Starting BVR or BFM Free Training replaces existing scripted air opponents and cancels the active campaign exercise.
-* **REMOVE AIR** removes scripted air opponents.
-* **RESET TRAINING RANGE** clears scripted combat air and ground units and cancels campaign tracking.
-
-Coordinate exercise selection and resets with other pilots.
-
-## Documentation
-
-The mission includes:
-
-* Mission briefing and F10 instructions
-* BVR Zone documentation
-* **20 integrated kneeboard pages**
-* **English BFM reference page — Page 20**
-* BFM spawn geometry and merge rules
-* Aircraft selection and campaign opponent tables
-* Multiplayer range-control guidance
-
-## Designed For
-
-* BVR and BFM training
-* Guns-only dogfighting
-* Neutral-merge and first-turn practice
-* Radar, sensor and weapon employment training
-* Single and Pair opponent engagements
-* Multi-aircraft combat exercises
-* Multiplayer servers and squadron training
-
----
-
-**Created by Iron87Ita**
-
-For **DCS World**
+This is an unofficial community mission for DCS World. DCS and related product names are trademarks of Eagle Dynamics SA. This project is not affiliated with or endorsed by Eagle Dynamics.
