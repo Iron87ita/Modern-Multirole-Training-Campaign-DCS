@@ -1,6 +1,6 @@
 # Modern Multirole Training Campaign – Caucasus
 
-**Version 2.0.0 · DCS World · Caucasus · Single-player / Multiplayer**
+**Version 3.0.0 · DCS World · Caucasus · Single-player / Multiplayer**
 
 A dynamic modern-combat training environment by **IRON87ITA**. The mission combines a structured nine-stage multirole campaign with independent BVR, guns-only BFM and free-training systems controlled through the F10 radio menu.
 
@@ -15,6 +15,7 @@ A dynamic modern-combat training environment by **IRON87ITA**. The mission combi
 - Type-selected and random ACE opponents
 - Guns-only BFM with neutral-merge protection
 - Air-to-ground and combined-force training
+- BLUE carrier group with CVN-73, LHA Tarawa and three escort ships
 - Integrated mission briefing and 20-page English kneeboard
 - No third-party mods required
 
@@ -79,13 +80,23 @@ Random one-, two- and four-ship BFM formations are available.
 
 Later stages combine fighter opposition with ground objectives and air-defence threats.
 
+## Carrier group — new in v3.0.0
+
+The mission now includes a BLUE naval force composed of:
+
+- CVN-73 aircraft carrier (`CVN_73`)
+- LHA Tarawa amphibious assault ship (`LHA_Tarawa`)
+- Three escort ships in the separate `BLUE CARRIER ESCORT GROUP`
+
+The carrier and Tarawa are assigned to `BLUE CARRIER GROUP`.
+
 ## Multiplayer range control
 
 Every BLUE player group receives its own F10 menu, but the generated training range is shared. Starting or resetting an exercise may replace another crew's scenario, so coordinate range-control actions in multiplayer.
 
 ## Installation
 
-1. Download the `.miz` file from the [latest GitHub release](https://github.com/Iron87ita/Modern-Multirole-Training-Campaign-DCS/releases/latest).
+1. Download [Modern Multirole Training Campaign – Caucasus v3.0.0](https://github.com/Iron87ita/Modern-Multirole-Training-Campaign-DCS/raw/refs/heads/main/Modern_Multirole_Training_Campaign_Caucasus_v3.0.0.miz).
 2. Copy it to:
 
    ```text
